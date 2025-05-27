@@ -2,14 +2,9 @@
     box-sizing: border-box;
 }
 
-html,
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-
-}
-
-body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -19,15 +14,20 @@ body {
     background-color: rgb(217, 172, 172);
 }
 
-h1 {
-    color: #A10000;
+main {
+    width: 100%;
 }
 
-h1,
+h1 {
+    margin-block: 0.67em;
+    font-size: 2em;
+    color: #A10000;
+    font-weight: 700;
+}
+
 h2,
 h3 {
     font-weight: 700;
-    margin: 1rem 0;
 }
 
 span.portions {
@@ -46,70 +46,67 @@ ul {
     }
 }
 
-.wrapper {
-    padding: 0px;
-    margin: 0px auto;
-    background-color: white;
+header:first-of-type {
+    margin: 0 0 1em 0;
+}
+
+em {
+    background-color: silver;
+    padding: 1em;
+}
+
+header img {
+    background-position: center;
+    object-fit: cover;
     width: 100%;
+    border: none;
+}
 
-    .hero {
-        background-image: url("img/hero.png");
-        background-position: center;
-        background-size: cover;
-        height: 19rem;
-        object-fit: fill;
-        width: 100%;
-    }
+article {
+    background-color: white;
+}
 
-    .content {
-        padding: 0 2rem;
-    }
+aside.images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    gap: 1rem;
 
-    .details {
-        margin: auto;
-        padding: 1rem;
-        margin-bottom: 1.5rem;
-        word-wrap: break-word;
-        background-color: rgb(235, 235, 235);
-    }
-
-    .imgContent {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 1rem;
-        gap: 1rem;
-
-        .img {
-            aspect-ratio: 1;
-            width: 20rem;
-            background-position: right;
-            flex: auto;
-            object-fit: cover;
-        }
-    }
-
-    .tips {
-        padding-bottom: 2rem;
+    img {
+        aspect-ratio: 1;
+        width: 20rem;
+        background-position: right;
+        flex: auto;
+        object-fit: cover;
     }
 }
 
+article>section {
+    padding-inline: 2em;
+}
+
+article>section:last-of-type {
+    padding-bottom: 2em;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .wrapper {
+    body {
         max-width: 100%;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .wrapper {
+    body {
         max-width: 600px;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .wrapper {
+    body {
         max-width: 768px;
     }
 }
