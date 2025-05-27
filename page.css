@@ -66,14 +66,14 @@ article p {
     padding: 1rem;
 }
 
-.imgContent {
+aside.images {
     column-gap: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.imgContent .img {
+aside.images>img {
     aspect-ratio: 1;
     background-position: right;
     flex: auto;
