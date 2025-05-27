@@ -1,115 +1,103 @@
-* {
-    box-sizing: border-box;
-}
-
 html,
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
     background-color: rgb(217, 172, 172);
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 h1 {
-    color: #A10000;
+    color: #a10000;
+    font-weight: 700;
+    margin: 1rem 0;
 }
 
-h1,
 h2,
 h3 {
     font-weight: 700;
     margin: 1rem 0;
 }
 
-span.portions {
+.portions {
     font-weight: 100;
     white-space: nowrap;
 }
 
 ol,
 ul {
-    margin-top: 0.5rem;
     list-style-position: outside;
+    margin-top: 0.5rem;
     padding-left: 2rem;
-
-    li {
-        padding-left: 0.5rem;
-    }
 }
 
-.wrapper {
-    padding: 0px;
-    margin: 0px auto;
+li {
+    padding-left: 0.5rem;
+}
+
+main {
     background-color: white;
+    margin-inline: auto;
     width: 100%;
+}
 
-    .hero {
-        background-image: url("img/hero.png");
-        background-position: center;
-        background-size: cover;
-        height: 19rem;
-        object-fit: fill;
-        width: 100%;
-    }
+header img {
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+}
 
-    .content {
-        padding: 0 2rem;
-    }
+article {
+    padding-inline: 2rem;
+}
 
-    .details {
-        margin: auto;
-        padding: 1rem;
-        margin-bottom: 1.5rem;
-        word-wrap: break-word;
-        background-color: rgb(235, 235, 235);
-    }
+article section:last-child {
+    padding-bottom: 2em;
+}
 
-    .imgContent {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 1rem;
-        gap: 1rem;
+article p {
+    background-color: rgb(235, 235, 235);
+    margin: 0;
+    padding: 1rem;
+}
 
-        .img {
-            aspect-ratio: 1;
-            width: 20rem;
-            background-position: right;
-            flex: auto;
-            object-fit: cover;
-        }
-    }
+.imgContent {
+    column-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
-    .tips {
-        padding-bottom: 2rem;
-    }
+.imgContent .img {
+    aspect-ratio: 1;
+    background-position: right;
+    flex: auto;
+    object-fit: cover;
+    width: 20rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .wrapper {
+    main {
         max-width: 100%;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .wrapper {
+    main {
         max-width: 600px;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .wrapper {
+    main {
         max-width: 768px;
     }
 }
