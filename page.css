@@ -10,30 +10,31 @@ body {
     font-style: normal;
     font-weight: 300;
 
-    h1 {
-        color: #a10000;
-        font-size: 2rem;
-    }
 }
 
 
+
 main {
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
     background-color: white;
     margin-inline: auto;
     width: 100%;
 
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
-        max-width: 100%;
-    }
-
     /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         max-width: 768px;
     }
 }
 
 article {
+
+    h1 {
+        color: #a10000;
+        margin-block: 0.67em;
+        font-size: 2em;
+    }
+
     margin-inline: 2rem;
 
     aside {
@@ -46,6 +47,9 @@ article {
     header {
         margin-inline: -2rem;
 
+        h1 {
+            margin-inline: 2rem;
+        }
 
         img {
             object-fit: cover;
@@ -78,9 +82,13 @@ article {
 
     figure {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
         margin: 0;
+
+        @media (width < 600px) {
+            grid-template-columns: 1fr;
+        }
 
         img {
             border-radius: 0.25rem;
