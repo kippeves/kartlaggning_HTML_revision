@@ -35,27 +35,23 @@ article {
         font-size: 2em;
     }
 
-    margin-inline: 2rem;
 
-    aside {
+    p {
         background-color: rgb(235, 235, 235);
         padding: 1rem;
         font-style: normal;
         display: block;
     }
 
-    header {
-        margin-inline: -2rem;
+    img.top_image {
+        object-fit: cover;
+        width: 100%;
+    }
 
-        h1 {
-            margin-inline: 2rem;
-        }
-
-        img {
-            object-fit: cover;
-            width: 100%;
-        }
-
+    header,
+    section,
+    p {
+        margin-inline: 2rem;
     }
 
     section {
